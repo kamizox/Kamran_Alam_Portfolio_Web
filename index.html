@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamran Alam | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,59 +18,247 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-actions">
+          
+          <a href="#contact" class="nav-cta">Hire Me</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobile-menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="mobile-login">Login</a>
+          <a href="#contact" class="mobile-cta">Hire Me</a>
+        </div>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero section">
-        <div class="container">
-          <img src="profile.png" alt="Kamran Alam" class="profile-photo" />
-          <h1>Kamran Alam</h1>
-          <p>Aspiring web developer focused on clean, user-friendly websites.</p>
-          <a href="#contact" class="btn">Hire Me</a>
+        <div class="container hero-layout">
+          <div class="profile-panel">
+            <img src="profile.png" alt="Kamran Alam" class="profile-photo" />
+            <h1>Kamran Alam</h1>
+            <p class="pronouns">he/him</p>
+            <p class="job-title">Aspiring Web Developer</p>
+            <p class="company">Web Engineering Student</p>
+
+            <div class="social-links" aria-label="Social media links">
+              <a
+                href="https://x.com/home"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X/Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://github.com/kamizox"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+          </div>
+
+          <div class="summary-panel">
+            <h2><span class="icon-badge">🪪</span>Professional Summary</h2>
+            <p>
+              I am Kamran Alam, a passionate Software Engineering student at
+              Sindh Madressatul Islam University with a 3.16 CGPA. I have a
+              strong foundation in programming and experience as a Freelance
+              Graphic Designer on Fiverr and a Mathematics Tutor.
+            </p>
+            <p>
+              I am seeking roles in software development or management to apply
+              my technical skills in a dynamic environment.
+            </p>
+            <a href="#" class="btn cv-btn"><span>⬇</span> Download CV</a>
+          </div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <h2>About Me</h2>
-          <p>
-            I am Kamran Alam, a passionate learner in web development. I enjoy
-            building simple, responsive, and accessible web pages using modern
-            HTML and CSS practices.
+          <h2>About</h2>
+          <p class="about-text">
+            I am Kamran Alam, a passionate Software Engineering student at
+            Sindh Madressatul Islam University with a 3.16 CGPA. I have
+            hands-on experience as a Freelance Graphic Designer on Fiverr and a
+            Mathematics Tutor, and I am actively seeking opportunities in
+            software development or management to contribute, learn, and grow
+            in a dynamic environment.
           </p>
         </div>
       </section>
 
       <section id="skills" class="section">
         <div class="container">
-          <h2>Skills</h2>
-          <ul class="skills-list">
-            <li>
-              <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML icon" />
-              <span>HTML</span>
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/48/css3.png" alt="CSS icon" />
-              <span>CSS</span>
-            </li>
-            <li>
-              <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript icon" />
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <span style="font-size: 2rem;">📱</span>
-              <span>Responsive Design</span>
-            </li>
-          </ul>
+          <h2 class="skills-heading">Technical Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <i class="fa-brands fa-html5"></i>
+              <h3>HTML</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h3>CSS</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-brands fa-js"></i>
+              <h3>JavaScript</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>C++</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-brands fa-java"></i>
+              <h3>Java</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-brands fa-python"></i>
+              <h3>Python</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-solid fa-layer-group"></i>
+              <h3>.NET</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-solid fa-hashtag"></i>
+              <h3>C#</h3>
+            </article>
+            <article class="skill-card">
+              <i class="fa-brands fa-wordpress"></i>
+              <h3>WordPress</h3>
+            </article>
+          </div>
+          <h3 class="certifications-heading">Certifications (Udemy)</h3>
+          <div class="certifications-list">
+            <article class="cert-card">WordPress Development</article>
+            <article class="cert-card">
+              Social Media Graphics Design &amp; Video Editing in Canva
+            </article>
+            <article class="cert-card">HTML + CSS + JS</article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="education-heading">Education</h2>
+          <div class="education-grid">
+            <article class="education-card">
+              <h3>
+                <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                BS Software Engineering
+              </h3>
+              <p class="edu-university">Sindh Madressatul Islam University, Karachi</p>
+              <p class="edu-date">2023 - 2027</p>
+            </article>
+            <article class="education-card">
+              <h3>
+                <span class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                Intermediate in Pre-Engineering
+              </h3>
+              <p class="edu-university">Superior Science College</p>
+              <p class="edu-date">2020 - 2022</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <a
+              class="project-card"
+              href="https://kamizox.github.io/Todo-list-Js/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Todo List project"
+            >
+              <img
+                src="todo.png"
+                alt="Todo List project preview"
+              />
+              <h3>Todo List</h3>
+              <p>
+                A functional Task Management app built with Vanilla JavaScript to
+                manage daily productivity.
+              </p>
+              <span class="project-cta"
+                >View Project <i class="fa-solid fa-arrow-right-long"></i
+              ></span>
+            </a>
+            <a
+              class="project-card"
+              href="https://kamizox.github.io/Hackathon_Website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Positivus project"
+            >
+              <img
+                src="positivus.png"
+                alt="Positivus project preview"
+              />
+              <h3>Positivus</h3>
+              <p>
+                A high-performance marketing agency landing page designed during
+                a Hackathon using modern CSS.
+              </p>
+              <span class="project-cta"
+                >View Project <i class="fa-solid fa-arrow-right-long"></i
+              ></span>
+            </a>
+            <a
+              class="project-card"
+              href="https://kamizox.github.io/Airbnb_clone_Responsive/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Airbnb Clone project"
+            >
+              <img
+                src="airbnb.png"
+                alt="Airbnb Clone project preview"
+              />
+              <h3>Airbnb Clone</h3>
+              <p>
+                A fully responsive travel booking UI clone with a focus on
+                pixel-perfect layout and mobile-first design.
+              </p>
+              <span class="project-cta"
+                >View Project <i class="fa-solid fa-arrow-right-long"></i
+              ></span>
+            </a>
+          </div>
         </div>
       </section>
 
       <section id="contact" class="section">
         <div class="container">
           <h2>Contact</h2>
+          <p class="contact-email">
+            Email: <a href="mailto:kamranalam4555@gmail.com">kamranalam4555@gmail.com</a>
+          </p>
           <form class="contact-form" action="#" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
@@ -85,8 +277,20 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; 2026 Kamran Alam. All rights reserved.</p>
+        <p>
+          &copy; 2026 Kamran Alam. All rights reserved. |
+          <a href="mailto:kamranalam4555@gmail.com">kamranalam4555@gmail.com</a>
+        </p>
       </div>
     </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+    </script>
   </body>
 </html>
